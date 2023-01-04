@@ -1,0 +1,98 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "import", "react"],
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "prettier"
+  ],
+  "rules": {
+    "no-duplicate-imports": [
+      "warn",
+      {
+        "includeExports": true
+      }
+    ],
+    "no-self-compare": "warn",
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "no-var": "warn",
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxBOF": 0 }],
+    "prefer-const": "warn",
+    "spaced-comment": ["warn", "always"],
+    "comma-dangle": ["warn", "always-multiline"],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return" },
+      { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
+      { "blankLine": "any", "prev": ["const", "let", "var"], "next": ["const", "let", "var"] }
+    ],
+    "quotes": "off",
+    "@typescript-eslint/quotes": [
+      "warn",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "@typescript-eslint/no-empty-interface": [
+      "warn",
+      {
+        "allowSingleExtends": true
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": "off",
+    "import/no-unresolved": "error",
+    "import/first": "error",
+    "import/no-duplicates": "error",
+    "import/newline-after-import": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": [["builtin", "external"], "internal", ["sibling", "parent"], "index", "type", "unknown"],
+        "pathGroups": [
+          {
+            "pattern": "**/*.+(css|scss)",
+            "group": "type",
+            "position": "after"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["**/*.+(css|scss)"],
+        "warnOnUnassignedImports": true,
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "sort-imports": [
+      "error",
+      {
+        "allowSeparatedGroups": true,
+        "ignoreDeclarationSort": true
+      }
+    ],
+    "react/jsx-newline": ["warn", { "prevent": false }],
+    "react/function-component-definition": ["warn", { "namedComponents": "arrow-function" }]
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "."
+      }
+    }
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}
