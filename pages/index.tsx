@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
-import HelloWorld from '../src/components/HelloWorld';
+import Header from 'src/components/Header/Header';
+import Intro from 'src/components/Intro/Intro';
 
 const Home = () => {
   return (
@@ -15,7 +16,9 @@ const Home = () => {
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
 
-      <HelloWorld />
+      <Header />
+
+      <Intro />
     </>
   );
 };
