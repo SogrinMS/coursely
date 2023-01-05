@@ -1,7 +1,14 @@
 import Head from 'next/head';
 
+import CourseCurriculum from 'src/components/CourseCurriculum/CourseCurriculum';
 import Header from 'src/components/Header/Header';
+import Included from 'src/components/Included/Included';
 import Intro from 'src/components/Intro/Intro';
+import Learn from 'src/components/Learn/Learn';
+import Questions from 'src/components/Questions/Questions';
+import Quote from 'src/components/Quote/Quote';
+import Result from 'src/components/Result/Result';
+import WhatYouGet from 'src/components/WhatYouGet/WhatYouGet';
 
 const Home = () => {
   return (
@@ -19,6 +26,20 @@ const Home = () => {
       <Header />
 
       <Intro />
+
+      <WhatYouGet />
+
+      <Learn />
+
+      <Included />
+
+      <CourseCurriculum />
+
+      <Result />
+
+      <Quote />
+
+      <Questions />
     </>
   );
 };
