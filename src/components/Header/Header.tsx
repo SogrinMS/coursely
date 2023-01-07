@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 import Logo from '../../../public/icons/coursely.svg';
@@ -6,9 +7,9 @@ const Header = () => {
   return (
     <header className="bg-[#FBFBFB]">
       <div className="container mx-auto flex flex-row items-center justify-between px-4 py-5">
-        <a href="#" className="w-[141px] transition-opacity duration-300 ease-in hover:opacity-80">
+        <Link href="#" className="w-[141px] transition-opacity duration-300 ease-in hover:opacity-80">
           <Logo />
-        </a>
+        </Link>
 
         <p className="text-[15px] font-normal uppercase leading-normal text-[#757575]">launch a successful podcast</p>
 

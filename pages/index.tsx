@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 import CourseCurriculum from 'src/components/CourseCurriculum/CourseCurriculum';
+import Footer from 'src/components/Footer/Footer';
 import Header from 'src/components/Header/Header';
 import Included from 'src/components/Included/Included';
 import Intro from 'src/components/Intro/Intro';
@@ -46,6 +47,8 @@ const Home = () => {
       <SubscriptionPlans />
 
       <Reviews />
+
+      <Footer />
     </>
   );
 };

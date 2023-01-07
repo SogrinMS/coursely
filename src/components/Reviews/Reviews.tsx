@@ -5,7 +5,7 @@ import Item from './Item/Item';
 const Reviews = () => {
   return (
     <section>
-      <div className="container mx-auto px-4 py-24">
+      <div className="container relative mx-auto px-4 py-24">
         <h2 className="mb-12 text-center text-4xl font-normal">More Praise From our Students</h2>
 
         <div className="columns-3 gap-8">
@@ -45,6 +45,8 @@ const Reviews = () => {
             name="Jamie Matthew"
           />
         </div>
+
+        <div className="absolute right-[-11px] bottom-0 h-[59px] w-[59px] bg-[#87CDFF]"></div>
       </div>
     </section>
   );
