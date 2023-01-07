@@ -8,6 +8,7 @@ import Learn from 'src/components/Learn/Learn';
 import Questions from 'src/components/Questions/Questions';
 import Quote from 'src/components/Quote/Quote';
 import Result from 'src/components/Result/Result';
+import Reviews from 'src/components/Reviews/Reviews';
 import SubscriptionPlans from 'src/components/SubscriptionPlans/SubscriptionPlans';
 import WhatYouGet from 'src/components/WhatYouGet/WhatYouGet';
 
@@ -43,6 +44,8 @@ const Home = () => {
       <Questions />
 
       <SubscriptionPlans />
+
+      <Reviews />
     </>
   );
 };
